@@ -7,9 +7,18 @@ body{
 
 .head-title{
     display: flex;
-    flex-direction: row;
+    transition: font-size 1s;
+    flex-direction: column;
     justify-content: center;
     color: bisque;
     align-items: center;
     font-family: cursive;
+}
+
+.head-title-expanded {
+    font-size: 12px;
+}
+
+.head-title-contracted {
+    font-size: 6px;
 }

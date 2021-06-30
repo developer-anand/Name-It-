@@ -6,7 +6,13 @@ const Header=({headerExpanded})=> {
     return (
         <div className="head-container">
             <img className={`head-img ${headerExpanded ? 'head-img-expanded' : 'head-img-contracted' }`} src={add} alt="Header" />
-            <h1 className="head-text">Name It!</h1>
+            <h1
+                className={`head-text ${
+                    headerExpanded
+                        ? 'head-text-expanded'
+                        : 'head-text-contracted'
+                }`}
+            >Name It!</h1>
             
         </div>
     )
